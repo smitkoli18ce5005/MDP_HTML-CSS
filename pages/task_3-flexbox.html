@@ -7,15 +7,15 @@
     <title>Document</title>
     <style>
         .flex-container{
-            flex: display;
+            display: flex;
             flex-direction:column;
         }
         .flex-container-middle{
-            flex: display;
+            display: flex;
             flex-direction:row;
         }
         .flex-container-middle-bar{
-            flex: display;
+            display: flex;
             flex-direction:column;
         }
         .header{
@@ -23,22 +23,27 @@
             text-align: center;
         }
         .left-bar{
-            flex-basis: 15%;
+            flex-basis: 50%;
             background-color: yellow;
+            text-align: center;
         }
         .flex-container-middle-bar{
-            flex-basis: 70;
+            flex-basis: 10;
             background-color: blue;
         }
         .flex-container-middle-bar > div{
             background-color: lightblue;
-            border-color: blue;
+            border: 10px solid blue;
+            padding: 10px;
         }
         .right-bar{
+            flex-basis: 50%;
             background-color: pink;
+            text-align: center;
         }
         .footer{
             background-color: greenyellow;
+            text-align: center;
         }
         .h3{
             text-align: center;
