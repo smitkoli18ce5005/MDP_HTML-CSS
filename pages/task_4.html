@@ -12,12 +12,15 @@
             background-color: #2e3f51;
             color: rgb(255, 255, 255);
             font-size: 20px;
+            width: 100%;
         }
         .content-flex-box{
+            display: flex;
+            flex-direction: column;
             background-color: #28bd9d;
             color: rgb(255, 255, 255);
             text-align: center;
-            padding: 1%;
+            width: 100%;
         }
         .name-header{
             flex-grow: 2;
@@ -28,11 +31,43 @@
             padding: 1%;
             margin-right: 2%;
         }
+        .content-flex-box > img{
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         h1{
             font-size: 66px;
         }
         h3{
             letter-spacing: 2px;
+        }
+        @media screen and (max-width:480px) {
+            .header-flex-box{
+                flex-direction: column;
+                font-size: 10px;
+            }
+            .header-contents{
+                display: none;
+            }
+            .name-header{
+                margin-left: 0;
+            }
+            .content-flex-box > img{
+                width: 20%;
+                display: block;
+                margin-top: 1%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
         }
     </style>
 </head>
@@ -47,8 +82,7 @@
         <img src="../assets/cartoon.JPG" alt="cartoon image">
         <h1>Navendu Pottekkat</h1>
         <img src="../assets/cartoon-id.JPG" alt="id">
-        <h3>Machine Learning - Computer Vision</h3>
-        <h3>ML on Edge</h3>
+        <h3>Machine Learning - Computer Vision<br><br>ML on Edge</h3>
     </div>
 </body>
 </html>
