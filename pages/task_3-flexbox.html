@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            flex: display;
+            flex-direction:column;
+        }
+        .flex-container-middle{
+            flex: display;
+            flex-direction:row;
+        }
+        .flex-container-middle-bar{
+            flex: display;
+            flex-direction:column;
+        }
+        .header{
+            background-color: red;
+            text-align: center;
+        }
+        .left-bar{
+            flex-basis: 15%;
+            background-color: yellow;
+        }
+        .flex-container-middle-bar{
+            flex-basis: 70;
+            background-color: blue;
+        }
+        .flex-container-middle-bar > div{
+            background-color: lightblue;
+            border-color: blue;
+        }
+        .right-bar{
+            background-color: pink;
+        }
+        .footer{
+            background-color: greenyellow;
+        }
+        .h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <h1>HEADER - Sample Flexbox Example</h1>
+        </div>
+        <div class="flex-container-middle">
+            <div class="left-bar">
+                <h3>Left Side Bar</h3>
+            </div>
+            <div class="flex-container-middle-bar">
+                <div>
+                    <h2>First article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et viverra libero. Nulla facilisi. Nam venenatis, felis pretium congue feugiat, odio neque fringilla diam, vitae accumsan tellus mi accumsan turpis. Sed varius, turpis eget interdum consequat, augue massa dignissim velit, sed aliquet lectus enim quis arcu. Integer et velit eget felis varius blandit. Sed ullamcorper mauris porttitor dolor mollis tristique. Etiam et consectetur quam. Sed est lacus, viverra vel arcu non, faucibus pharetra libero. Pellentesque ligula elit, faucibus sit amet pretium vitae, pharetra non metus. Nunc et eros varius nibh consequat feugiat sit amet quis purus. Aenean at massa diam. Quisque ut nunc velit. Quisque non justo ullamcorper, iaculis quam non, dapibus nisl.</p>
+                </div>
+                <div>
+                    <h2>Second article</h2>
+                    <p>In feugiat, turpis nec vehicula finibus, nisl dolor viverra nisl, vehicula fermentum arcu justo nec felis. Integer augue leo, gravida at venenatis ut, lacinia at dolor. Etiam sagittis, purus eu eleifend tempus, justo urna pretium lorem, ac finibus lorem ante et lorem. Ut imperdiet velit at sem molestie pretium. Etiam ac dolor iaculis, eleifend erat ac, facilisis enim. Mauris elit mauris, euismod a consectetur in, mollis ut sapien. Nullam aliquet lobortis magna, sit amet vestibulum urna tristique in. Curabitur commodo auctor orci, vitae hendrerit lectus luctus vitae. Mauris sodales a enim vel commodo. In vel efficitur tellus. Mauris sit amet leo sit amet elit hendrerit pulvinar. Aenean ultrices ipsum aliquam, elementum dolor ut, malesuada tellus.</p>
+                </div>
+                <div>
+                    <h2>Third article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et viverra libero. Nulla facilisi. Nam venenatis, felis pretium congue feugiat, odio neque fringilla diam, vitae accumsan tellus mi accumsan turpis. Sed varius, turpis eget interdum consequat, augue massa dignissim velit, sed aliquet lectus enim quis arcu. Integer et velit eget felis varius blandit. Sed ullamcorper mauris porttitor dolor mollis tristique. Etiam et consectetur quam. Sed est lacus, viverra vel arcu non, faucibus pharetra libero. Pellentesque ligula elit, faucibus sit amet pretium vitae, pharetra non metus. Nunc et eros varius nibh consequat feugiat sit amet quis purus. Aenean at massa diam. Quisque ut nunc velit. Quisque non justo ullamcorper, iaculis quam non, dapibus nisl.
+
+                        In feugiat, turpis nec vehicula finibus, nisl dolor viverra nisl, vehicula fermentum arcu justo nec felis. Integer augue leo, gravida at venenatis ut, lacinia at dolor. Etiam sagittis, purus eu eleifend tempus, justo urna pretium lorem, ac finibus lorem ante et lorem. Ut imperdiet velit at sem molestie pretium. Etiam ac dolor iaculis, eleifend erat ac, facilisis enim. Mauris elit mauris, euismod a consectetur in, mollis ut sapien. Nullam aliquet lobortis magna, sit amet vestibulum urna tristique in. Curabitur commodo auctor orci, vitae hendrerit lectus luctus vitae. Mauris sodales a enim vel commodo. In vel efficitur tellus. Mauris sit amet leo sit amet elit hendrerit pulvinar. Aenean ultrices ipsum aliquam, elementum dolor ut, malesuada tellus.</p>
+                </div>
+            </div>
+            <div class="right-bar">
+                <h3>Right Side Bar</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>
